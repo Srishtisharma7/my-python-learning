@@ -1,0 +1,12 @@
+open(...): This opens a file named table_<n>.txt in write mode ("w").
+as f: This assigns the opened file to the variable f, so you can use f to write to the file.
+f.write(table): This writes the multiplication table string (table) to the file.
+Why use with?
+When you use with:
+
+You don’t have to manually close the file (e.g., using f.close()).
+Python automatically handles the cleanup (closing the file) for you, even if there’s an error in the code.
+So, in simple terms:
+
+The with statement makes your file-writing code cleaner and safer.
+It automatically takes care of closing the file after writing to it.
